@@ -1,0 +1,256 @@
+
+/* first page*/
+body{
+  font:15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  padding: 20px;
+  width: 400px;
+  margin-top: 80px;
+}
+.wrapper {
+  background: url(img/photo1.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  //color: #ffffff;
+
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 200%;
+}
+
+.left, .right {
+  //background-color: lightblue;
+
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left {
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2px;
+  text-shadow:5px 5px 10px black;
+  color: #ffffff;
+}
+.subtitle {
+  text-shadow:5px 5px 10px black;
+  color: #ffffff;
+}
+.bio {
+  text-shadow:5px 5px 10px white;
+  font-size: 23px;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  position: fixed;
+  width: 99%;
+  z-index: auto;
+  height: 15%;
+}
+
+header ul {
+  margin: 30px auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+header li {
+  color: green;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+header .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* education*/
+#schools{
+  margin-top: 5px;
+}
+
+#schools .school{
+  float: left;
+  width: 40%;
+  padding: 30px;
+  text-align: left;
+}
+#schools .school img{
+  width: 400px;
+  height: 275px;
+}
+
+#schools{
+  background-image: url(img/education.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#topic{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  //border-top: #e8491d 5px solid;
+}
+
+#topic h2{
+  margin:0;
+}
+
+/* projects */
+#project{
+  background-image: url(img/project1.jpg);
+  background-position: 5% 20%;
+  background-size: cover;
+
+}
+
+.project-data{
+  width: 95%;
+  margin: auto;
+}
+.project-title{
+  color: lightgreen;
+  font-weight: 20px;
+  border-top: #e8491d 5px solid;
+}
+.project-subtitle{
+  color: white;
+}
+.DataWarehouse-container{
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.pic{
+  width: 70%;
+  height: : 80px;
+}
+
+/* SKILLS */
+
+#skill{
+  background-image: url(img/skills.png);
+  background-position: 1% 50%;
+  background-size: cover;
+  color: white;
+}
+.skills-container{
+  width: 40%;
+  margin: auto;
+  overflow: hidden;
+  //padding: 20px;
+
+
+}
+.skills-item{
+  float: left;
+  width: 33%
+
+}
+.skills-item1{
+  float: right;
+  width: 33%;
+}
+
+
+/* I nterests*/
+
+#interest{
+  background-image: url(img/interest.jpg);
+  background-position: 10% 30%;
+  background-size: cover;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+.nesta-photos-row1{
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.photo-box-row1{
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.nesta-photos-row2{
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+.photo-box-row2{
+  content: "";
+  clear: both;
+  display: table;
+}
+.interest-pic{
+  width: 400px;
+  height: 400px;
+}
+
+/*.toulon-pic, .douala-pic {
+  //width: 300px;
+  //max-width: 100%;
+  //flex: 1;
+  //display: flex;
+  float: left;
+  width: 50%;
+  padding: 30px;
+  text-align: left;
+}
+
+
+
+
+
+.wrapper-educ {
+  max-width: 100%;
+  display: flex;
+  flex-direction: initial;
+  height: 200%;
+  margin-top: 20px;
+}
+.educ-header {
+  margin-bottom: 50px;
+  display: flex;
+}*/
+/*
+
+
+.photo-and-aboutme {
+	text-align: center;
+}
+*/

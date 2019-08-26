@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Herve Tchouamani</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+  </head>
+
+  <body >
+  	<div class="wrapper" id="about">
+  		<div class="hearder">
+  			<header>
+			<nav id="main-menu" role="navigation">
+				<ul>
+					<li class="current"><a href="#about">Home</a></li>
+          			<li class="current"><a href="#about">About Me</a></li>
+					<li class="current"><a href="#education">Education</a></li>
+					<li class="current"><a href="#projects">Projects</a></li>
+          			<li class="current"><a href="#skills">Skills</a></li>
+          			<li class="current"><a href="#interests">Interests</a></li>
+					<li class="current"><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+    		</header>
+  		</div>
+
+  		<div class="left">
+  			<img class="profile-picture" src="img/profile.jpeg" alt="herve-photo" >
+  			<h1 class="name"> Herve Tchouamani</h1>
+  			<h3 class="subtitle"> Computer Science Student</h3>
+
+  		</div>
+
+  		<div class="right">
+  			<p class="bio">I am pursuing a Bachelor's degree in Data Analytics at Baruch College and I am also the Financial Auditor of the Haut-Nkam Association in New York City. Cloud Computing, Programming, Machine Learning, and Data visualization are things I am excited about.  
+  			</p>
+
+  		</div>
+  		
+  	</div>
+
+    <section id="schools">
+    	<div id="topic">
+    		<h2 id="education">Education</h2>
+    	</div>
+    	
+    	<div class="container">
+    		<div class="school">
+	    		<a href="https://www.baruch.cuny.edu/?_ga=2.56627690.1774104819.1566271486-1771800733.1559562845" target="_blank"><img class="baruch-pic" src="img/baruch.png" alt="baruch-picture">
+	    		<h3>Baruch College/CUNY, New York, Zicklin School of Business</h3></a>
+	    		<p>I am pursuing a Bachelor of Business Administration in Computer Information Systems. In this program, I am learning Programming, Machine Learning, Cloud Computing, and Relational and Non-Relational Databases. I am graduating in June 2020. </p>
+	    	</div>
+
+	    	<div class="school">
+	    		<a href="https://www.umontpellier.fr/university-of-montpellier" target="_blank">
+	    			<img class="montpel-pic" src="img/montpellier.png" alt="montpellier-picture">
+	    			<h3>Montpellier University, France</h3>
+	    		</a>
+	    		<p>I obtained a Master's Degree in Financial Risk Management. Among others, Financial Data Analysis was a tough part of this program. That is why this Master is the starting point of the passion I have with programming.</p>
+	    	</div>
+	    </div>
+	</section>
+
+	<section id="project">
+		<div id="topic">
+			<h2 id="projects"> Projects</h2>
+		</div>
+
+		<div class="project-data">
+			<h3 class="project-title">Data Analytics</h3>
+			<h4 class="project-subtitle">Analysis of Interval-Valued Data and prediction of electricity consumption in France.</h4>
+			<figure class="interval-data-fig">
+				<img class="pic" src="img/data.png" alt="original-data">
+				<figcaption>Fig: Interval Data of the electricity consumption from 2008 to 2012 in France.</figcaption>
+			</figure>
+			<p class="project-description"> <strong>Abstract</strong> <br> Each bar of this graph is an interval of the monthly electricity consumption. The lower and the upper bound represent respectively the minimum and the maximum value. This project first aimed to analyze different regression methods based on Interval Data and picked the one that has the lower prediction error. Second, each interval is transformed into a signle value data by taking the mid-point of each interval. Since there was a rigid seasonality, I modeled the time series using Fourier series. Then, the confidence interval at 5 and 1% has been calculated and compared with the true interval data. In conclusion, the prediction error was higher when performing the forecasting on the classical data and then find the confidence interval than to work directly with the interval data. In presence of interval data, we should analyze it without any prior transformation.<br>
+				<strong>Keywords:</strong>Density function, Maximum Likelihood, Regression, Fourier series. <br>
+			This project can be found <a href="https://www.researchgate.net/publication/320677916_Analyse_des_series_temporelles_intervalles_et_prevision_en_economie_de_l'energie" target="_blank">here.</a> </p>
+				
+		</div>
+
+		<div class="project-data">
+			<h3 class="project-title">Data Warehousing</h3>
+			<h4 class="project-subtitle">Building A Relational Online Analytical Processing System using YouTube And Ted Talks Datasets</h4>
+			<p class="project-description"> <strong>Abstract</strong> <br> This paper aimed to integrate two system of records into a Data Warehouse following Kimball methodology. We have defined six Key Performance Indicators to support data sources that are represented by YouTube videos and TED talks from 2006 to 2018. SQL Server has been chosen as a target database to support data marts, and it is hosted by Microsoft Azure. Before running the ETL, some dimensions have been cleaned using Tableau Prep. The ETL process has been implemented on eleven of the thirty-four subsystems as defined by Kimball. After loading the data into the Data Warehouse, Tableau has been connected to Microsoft SQL Server, and we came up with meaningful insights from the data using some visualization based on comparative analysis, trending analysis, or correlation analysis. <strong>Keywords:</strong> Data Integration, ETL, Cloud Computing, Relational Databases, Business Intelligence, Key Performance Indicators</p>
+			<h4>Here are some graphics representation of the project.</h5>
+			<div class="DataWarehouse-container">
+				<div>
+					<figure>
+						<img class="pic" src="img/physicalDesign.png" alt="physical-design">
+						<figcaption>Fig.1: Physical Design drawn by Sql Server Management Studio (SSMS)</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img class="pic" src="img/youtubeFacts.png" alt="fact-table">
+						<figcaption>Fig.2: This image represents the ETL pipeline using SPOON - the Data Integration tool of Pentaho. At this stage, we were sending the data from our local computer to the ROLAP System hosted in Microsoft AZURE.</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img class="pic" src="img/youtubeVisual.png" alt="visualization">
+						<figcaption>Fig.3: Credentials of the database hosted in AZURE were used in Tableau data visualization tool to access the DataWarehouse. It turns out that Friday and the Presidents' day are respectively the day and the holiday that have the most views in YouTube.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<section id="skill">
+		<div id="topic">
+			<h2 id="skills">Skills</h2>
+		</div>
+		<div class="skills-container">
+			<div class="skills-name">
+				<div class="skills-item">
+					<h3>Languages:</h3>
+					<ul>
+						<li>C++</li>
+						<li>SQL</li>
+						<li>JavaScript</li>
+						<li>Python</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Latex</li>
+					</ul>
+
+					<h3>Statictical Tools</h3>
+					<ul>
+						<li>MATLAB</li>
+						<li>R</li>
+						<li>SAS</li>
+						<li>SPSS</li>
+						<li>Stata</li>
+						<li>EVIEWS</li>
+					</ul>
+				</div>
+
+				<div class="skills-item1">
+					<h3>IDE Tools</h3>
+					<ul>
+						<li>MS Visual Studio</li>
+						<li>Sublime Text 3</li>
+						<li>Jupyter notebook</li>
+					</ul>
+
+					<h3>Databases</h3>
+					<ul>
+						<li>SQL Server/SSMS</li>
+						<li>MySQL/Workbench</li>
+						<li>MS Access</li>
+						<li>Oracle/ SQL Developer</li>
+					</ul>
+
+					<h3>Operating Systems</h3>
+					<ul >
+						<li>Mac OS</li>
+						<li>Windows</li>
+					</ul>
+				</div>
+
+			</div>
+			
+		</div>
+	</section>
+
+	<section id="interest">
+		<div id="topic">
+			<h2 id="interests">Interests</h2>
+		</div>
+
+		<div class="photo-box-row1">
+			<div class="nesta-photos-row1">
+				<h3>
+					<ul><li>Reading</li></ul>
+				</h3>
+				<figure>
+					<img class="interest-pic" src="img/reading.png" alt="united-nation" style="width: 100%">
+					<figcaption>Fig.1: United Nation in New York City.</figcaption>
+				</figure>
+			</div>
+			
+			<div class="nesta-photos-row1">
+				<h3>
+					<ul><li>Traveling</li></ul>
+				</h3>
+				<figure>
+					<img class="interest-pic" src="img/travel.png" alt="A380" style="width: 100%">
+					<figcaption>Fig.2: Trip to Paris with A380.</figcaption>
+				</figure>
+				
+			</div>
+		</div>
+
+		<div class="photo-box-row2">
+			<div class="nesta-photos-row2">
+				<h3>
+					<ul><li>Soccer Player</li></ul>
+				</h3>
+				<figure>
+					<img class="interest-pic" src="img/soccer1.png" alt="montpellier-soccer-team" style="width: 100%">
+					<figcaption>Fig.3: Me and My Soccer Teammates in Montpellier, France.</figcaption>
+				</figure>
+				
+			</div>
+
+			<div class="nesta-photos-row2">
+				<h3>
+					<ul><li>Swimming</li></ul>
+				</h3>
+				<figure>
+					<img class="interest-pic" src="img/swimming.jpeg" alt="miami-beach" style="width: 100%">
+					<figcaption>Fig.4: Summer 2019 in Miami.</figcaption>
+				</figure>
+				
+			</div>
+		</div>
+	</section>
+	<!--
+	<section id="school2">
+		<div class="container1">
+	    	<div class="school2">
+	    		<a href="http://www.univ-tln.fr/-University-of-Toulon-.html" target="_blank">
+	    			<img class="toulon-pic" src="img/toulon.png" alt="toulon-picture">
+	    			<h3>Toulon University, France</h3>
+	    		</a>
+	    		<p>I obtained a Master in Economics and Finance in 2013.</p>
+	    	</div>
+    	
+	    	<div class="school2">
+	    		<a href="http://www.univ-douala.cm/" target="_blank">
+	    			<img class="douala-pic" src="img/douala.png" alt="douala-picture">
+	    			<h3>Douala University, Cameroon</h3>
+	    		</a>
+	    		<p>I obtained a Bachelor's degree in Econometrics.</p>
+	    	</div>
+    	</div>
+    	
+    </section>
+
+<div id="container" class="educ">
+  <h2 id="#education"> Education</h2>
+  <p>
+    <h3>Baruch College/CUNY, Zicklin School of Business &nbsp &nbsp &nbsp &nbsp New York</h3>
+    <span>Bachelor of Business Administration in Computer Information Systems &nbsp &nbsp &nbsp &nbsp Expected June 2020 <br>
+    Cummulative GPA: 3.965</span>
+
+    <h3>Montpellier University &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Montpellier, France</h3>
+    <span>Master's Degree in Financial Risk Management &nbsp &nbsp &nbsp &nbsp &nbsp Sep 2014</span>
+  </p>
+  
+</div>
+
+<div id="container" class="project">
+  <h2 id="#projects">Projects</h2>
+  <p>
+    <h3>Data Warehousing for Analytics, Baruch College &nbsp &nbsp &nbsp &nbsp &nbsp Jan 2019 - May 2019</h3>
+   
+    <p> Implemented the ETL Process on YouTube and TED dataset using the Pentaho data integration tool.<br>
+    Created a ROLAP System in Microsoft AZURE to host the DataWarehouse <br>
+    Extracted meaningful insights from the DataWarehouse using Tableau.</p>
+  </p>
+</div>
+
+<div class="skills">
+  <h2 id="#skills"></h2>
+
+  <table>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Languages</td>
+    <td>C++, Python, SQL, HTML, CSS</td>
+  </tr>
+  <tr>
+    <td>IDE Tools</td>
+    <td>MS Visual Studio, Sblime Text 3, Jupyter Notebook</td>
+  </tr>
+  <tr>
+    <td>Statistical Tools</td>
+    <td>Matlab, R, SAS, Stata, Eviews</td>
+  </tr>
+  <tr>
+    <td>Databases</td>
+    <td>SQL Server, MySql, Ms Access</td>
+  </tr>
+  <tr>
+    <td>Office Tools</td>
+    <td>MS Office(Word, Excel, Powerpoint)</td>
+  </tr>
+  <tr>
+    <td>Operating Systems</td>
+    <td>Mac OS, Windows</td>
+  </tr>
+</table>
+
+
+</div>
+-->
+  </body>
+</html>
